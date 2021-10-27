@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.img-circle {
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0% 30%;
+    height: 150px;
+     box-shadow: 0 0 16px rgb(0 0 0 / 15%)
+}
+
+.btn-orange {
+  border-radius: 5%;
+  background-color: #fad0ae;
+  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+  margin: 16px 24px;
+  display: inline-block;
+  padding: 16px 24px;
+  font-weight: 600;
+}
+
+.btn-orange:hover {
+  color: #FEF5ED;
+  transition: 1s;
+  background-color:#474441
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px 8px;
+}
+
+.icon {
+  font-size: 48px;
+  margin: 0 4px;
+  height: 42px;
+  width: 42px;
+  display:inline-block;
+}
+
+.icon:hover {
+  transition: 1s;
+  color:#181a17
+}
+.card-white {
+  text-align: center;
+  background-color: #fcede1;
+  width: 500px;
+  padding: 16px;
+  margin: 24px auto;
+  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+}
+
+body {
+  background-color: #FEF5ED;
+  font-family: 'Open Sans', sans-serif;
+  color: #6e776e;
+  font-size: 16px;
+  line-height: 150%;
+  background: linear-gradient(-45deg, #f3bdad, #f7e2ea, #def4fc, #ddf3c8);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #272b26
+}
+
+a {
+  text-decoration: none;
+  color: #474441
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .card-white {
+    width: 500px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .card-white {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .card-white {
+    width: 300px;
+  }
+}
